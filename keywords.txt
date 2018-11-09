@@ -1,0 +1,26 @@
+#######################################
+# Syntax Coloring Map For easyFingerprint
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+easyFingerprint	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+dataSend 	KEYWORD2
+dataLatch 	KEYWORD2
+periodAlarm 	KEYWORD2
+timerAlarm	KEYWORD2
+ledDisplay     KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+FP_SUCCESS LITERAL1
+FP_FAILURE LITERAL1
