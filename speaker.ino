@@ -40,3 +40,18 @@ void outputAlarm()
     }
 }
 
+
+void checkAlarm(uint8_t vHour, uint8_t vMin,uint8_t gHour, uint8_t gMin)
+{
+  if ( (vHour==gHour)&&(vMin==gMin) ) setAlarm(1);
+  if ( (vHour==gHour)&&((vMin+1)==gMin) ) setAlarm(0);
+}
+void setPeriod(uint8_t vMin)
+{
+  static unsigned long vTime=millis();
+  if (millis()-vTime>=60000*vPeriod)
+  {
+    setAlarm(2);
+    vTime=millis();
+  }
+}
